@@ -2,177 +2,165 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Introduction to HTML</title>
+    <title>Game Engines</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header role="banner">
-      <h1>Comp 484</h1>
-      <h2>Introduction to HTML</h2>
+      <h1>Game Development</h1>
+      <h2>Game Engines</h2>
       <nav role="navigation">
         <ul>
-          <li><a href="index.html" title="Introduction to HTML">Introduction to HTML</a></li>
-          <li><a href="syntax.html" title="HTML syntax">HTML syntax</a></li>
-          <li><a href="structure.html" title="Structuring pages">Structuring pages</a></li>
-          <li><a href="links.html" title="Creating links">Creating links</a></li>
-          <li><a href="reference.html" title="HTML reference">HTML reference</a></li>
-          <li><a href="next.html" title="Next steps">Next steps</a></li>
+          <li><a href="index.html" title="Game Engines">Game Engines</a></li>
+          <li><a href="challenges.html" title="Challenges">Challenges</a></li>
+          <li><a href="skills.html" title="Skills">Skills</a></li>
+          <li><a href="Projects.html" title="Projects">Projects</a></li>
         </ul>
       </nav>
     </header>
+
     <main role="main">
       <article role="article">
-        <header>
-          <p>
-            <img
-              src="images/tags.png"
-              alt="HTML"
-              width="310"
-              height="375"
-              class="flowRight"
-            />HTML, or <b>Hypertext Markup Language</b>, is the language used to
-            describe the structure of content on the web. As with other markup
-            languages, it uses tags to identify page elements and describe the
-            page&rsquo;s semantic structure. An easy way to visualize this is to
-            consider the various types of documents you see on a day-to-day
-            basis, like magazine and newspaper articles or documents created in
-            a program like Microsoft Word. The formatting of those documents
-            ensures that the information is presented clearly, with a distinct
-            hierarchy. This allows readers to quickly scan the page and
-            determine which information is important and how the content relates
-            to each other. HTML allows us to do that for web pages by first
-            establishing the overall document structure, and then formatting
-            elements like headings and paragraphs.
-          </p>
-        </header>
+        <!-- Intro -->
         <section>
-          <h3>History</h3>
+          <h3>What is a Game Engine?</h3>
           <p>
-            HTML can trace its roots back to 1989 at <b>CERN</b>, the European
-            Laboratory for Particle Physics. There, Tim Berners-Lee came up with
-            the idea of having scientists from around the world collaborate on
-            research. His idea was rather than simply making documents available
-            on a server as many people were doing at the time, the documents
-            themselves should be able to link to one another, in a way that
-            would enhance collaboration and make information easier to find and
-            more accessible. From this idea Tim created HTML (based off SGML, an
-            earlier markup language) to format pages and HTTP (or Hypertext
-            Transfer Protocol) to transfer them from one computer to another.
-            Although the world didn&rsquo;t quite realize it yet, the World Wide
-            Web was born.
-          </p>
-          <p>
-            As the popularity of the web increased in the early 90s, HTML
-            underwent a series of rapid changes. Browser manufacturers like
-            Netscape and Microsoft started to develop their own proprietary
-            tags, and development bodies like the IETF (the Internet Engineering
-            Task Force) and the W3C (the World Wide Web Consortium) were finding
-            it difficult to gain traction with the standardization process of
-            HTML. By 1995, the W3C created an editorial review board for HTML
-            that included members of the W3C as well as representatives from
-            browser developers and other organizations. This collaborative board
-            had a major impact in stabilizing the HTML standard and reducing the
-            uneven implementations that had plagued earlier browsers.
-          </p>
-          <p>
-            This resulted in the HTML 4.0 specification being released in 1998.
-            It was the most stable version of HTML up to that point, and
-            formalized many of the improvements made to HTML over the years.
-            It&rsquo;s still the most widely used version of HTML and remains
-            the baseline for authors and implementers alike.
-          </p>
-          <p>
-            Around the time that HTML 4.0 was published, a movement began to
-            evolve HTML towards a more flexible style of markup language.
-            Although authors had tried to anticipate the tags necessary to
-            markup documents, the spread of the World Wide Web and the diversity
-            of user agents made keeping up with requirements difficult. In the
-            eyes of many, migrating to a markup language like XML, which allows
-            authors to create their own tags to represent content, would
-            alleviate those concerns and allow HTML to evolve organically. XML
-            also contains stricter formatting rules than HTML, and a sizable
-            number of authors and developers found HTML&rsquo;s lax parsing
-            rules problematic. This effort resulted in the publishing of the
-            XHTML 1.0 specification in 2000. Although it was not a dramatic
-            departure from HTML 4.0, it did introduce new syntax rules to
-            conform to XML requirements and eliminated the HTML elements that
-            were seen to be dictating the presentation of content rather than
-            the structure of it.
-          </p>
-          <p>
-            <img
-              src="https://cdn.glitch.com/9df58cb1-5eb9-48c7-b789-7ac42d64d5e8%2F200px-W3C_Icon.png?1518559229441"
-              alt="W3C logo"
-              width="200"
-              height="136"
-              class="flowLeft"
-            />Shortly after the 1.0 specification was published, work began on
-            XHTML 2.0, which was to move HTML further towards XML. XHTML 2.0 was
-            a dramatic departure from previous versions of HTML and was never
-            able to gain any traction among browser developers. The
-            specification languished for years in the W3C before its charter was
-            revoked in 2009, essentially ending development.
-          </p>
-          <p>
-            While the W3C was taking HTML down the XHTML path, a group of
-            authors, developers, and organizations became frustrated with the
-            lack of progress on updating HTML. This group decided to evolve HTML
-            independently of the W3C and formed the Web Hypertext Application
-            Technology Working Group (or <b>WHATWG</b>) in 2004. They began work
-            on the Web Applications 1.0 standard, which extended HTML 4.0,
-            adding clear parsing rules for user agents and creating APIs to make
-            developing web applications easier. The W3C, realizing that XHTML
-            2.0 faced significant hurdles in adoption, began working with the
-            WHATWG and began to jointly develop the new standard with them in
-            2008. Currently the W3C works on publishing a stable version of the
-            specification, while the WHATWG continues to work on what they call
-            a &ldquo;living standard&rdquo; of the specification. As a living
-            standard, they&rsquo;ve removed the version number and simply refer
-            to it as &ldquo;HTML.&rdquo;
+            A game engine is a software framework designed to simplify the
+            development of video games. Engines provide essential tools such as
+            rendering, physics simulation, input handling, asset management, and
+            scripting. Below are four engines I've explored, each with unique strengths and
+            purposes. They range from beginner-friendly tools to industry-level
+            platforms.
           </p>
         </section>
+
+        <!-- Overview -->
         <section>
-          <h3>HTML timeline</h3>
-          <ol>
-            <li>
-              <b>1991</b>: Tim Berners-Lee publishes &ldquo;HTML Tags&rdquo;
-              which describes the initial 18 elements of HTML
-            </li>
-            <li>
-              <b>1992</b>: NCSA develops the Mosaic browser, which will
-              eventually evolve into Netscape
-            </li>
-            <li>
-              <b>1994</b>: The Internet Engineering Task Force (IETF) creates an
-              HTML working group to develop HTML specifications. Later that year
-              the W3C was created to foster an open standards environment
-            </li>
-            <li><b>1995</b>: HTML 2.0 specification is published</li>
-            <li>
-              <b>1995</b>: Microsoft releases Internet Explorer to compete with
-              Netscape
-            </li>
-            <li><b>1997</b>: HTML 3.2 specification is published</li>
-            <li><b>1997</b>: HTML 4.0 specification is published</li>
-            <li><b>2000</b>: XHTML 1.0 is published as a W3C recommendation</li>
-            <li><b>2004</b>: The WHATWG forms to continue work on HTML</li>
-            <li>
-              <b>2006</b>: W3C announces it will work with the WHATWG on HTML5
-            </li>
-            <li><b>2009</b>: XHTML Working Group charter expires</li>
-            <li>
-              <b>2012</b>: W3C and WHATWG announce they will develop the HTML5
-              standard separately
-            </li>
-          </ol>
+          <h3>Engines Covered</h3>
+          <ul>
+            <li>Roblox Studio - beginner-friendly, uses Lua</li>
+            <li>Godot - open-source 2D/3D engine</li>
+            <li>Unity - popular for indie devs, uses C#</li>
+            <li>Unreal Engine - industry-standard, AAA graphics, uses C++ and Blueprints</li>
+          </ul>
+          <br><hr>
+        </section>
+
+        <!-- Roblox -->
+        <section id="roblox" class="engine">
+          <div class="engine-info">
+            <img class="engine-logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Roblox_Studio_logo_2021_present.svg/1200px-Roblox_Studio_logo_2021_present.svg.png"
+              alt="Roblox Studio Logo" />
+
+            <div class="engine-text">
+              <h3>Roblox Studio</h3>
+              <p>
+                Roblox Studio is the game engine I've used the most. I have a nearly
+                complete game with 10 fun levels for players to enjoy. I am only
+                missing some basic UI, a lobby, and some polish. Roblox scripting uses
+                Lua, which I've mainly learned by watching YouTube tutorials (like
+                <em>The Dev King</em>).
+              </p>
+              <p>
+                It's free, has a simple UI, supports real-time collaboration, and
+                makes importing models easy. I would highly recommend new game developers
+                to start off with this engine.
+              </p>
+            </div>
+          </div>
+
+          <img class="engine-screenshot"
+            src="https://d1ng1bucl7w66k.cloudfront.net/ghost-blog/2025/03/Screenshot-2025-03-18-at-8.58.23-PM.png"
+            alt="Roblox Studio Screenshot" />
+        </section>
+
+        <!-- Godot -->
+        <section id="godot" class="engine">
+          <div class="engine-info">
+            <img class="engine-logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Godot_icon.svg/1200px-Godot_icon.svg.png?20170822201738"
+              alt="Godot Logo" />
+
+              <!-----------------------------------------
+              -                                         -
+              -            Element Used Below:          -
+              -         <abbr> for abbreviations        -
+              -                                         -
+              ------------------------------------------>
+
+            <div class="engine-text">
+              <h3>Godot</h3>
+              <p>
+                I found Godot through a YouTube channel called <em>Brackeys</em>. They 
+                have a great tutorial video on how to make a simple platformer game. I 
+                only attempted one project and didn't get far, but it felt like a strong 
+                next step after Roblox Studio. Godot is a <strong><abbr title="Free Open-Source Software">FOSS</abbr></strong>, 
+                and starting to gain lots of popularity.
+              </p>
+              <p>
+                It's beginner-friendly but also has advanced features, making it a
+                flexible engine for both 2D and 3D development.
+              </p>
+            </div>
+          </div>
+
+          <img class="engine-screenshot"
+            src="https://forum.godotengine.org/uploads/default/original/3X/0/3/038e9c1b81b872ca12658f6fce989da2365082f4.png"
+            alt="Godot Screenshot" />
+        </section>
+
+        <!-- Unity -->
+        <section id="unity" class="engine">
+          <div class="engine-info">
+            <img class="engine-logo"
+              src="https://cdn.freebiesupply.com/logos/large/2x/unity-69-logo-black-and-white.png"
+              alt="Unity Logo" />
+
+            <div class="engine-text">
+              <h3>Unity</h3>
+              <p>
+                I've followed a Udemy course and made some small mini-games in
+                Unity. I've only worked in <strong>2D</strong>, not 3D.
+              </p>
+              <p>
+                Unity is free (with pro tiers available), uses <strong>C#</strong>,
+                and is widely used in indie game development.
+              </p>
+            </div>
+          </div>
+
+          <img class="engine-screenshot"
+            src="https://europe1.discourse-cdn.com/unity/original/3X/f/1/f1c9ddced758faec108e256dce528bba6e5259b9.png"
+            alt="Unity Screenshot" />
+        </section>
+
+        <!-- Unreal -->
+        <section id="unreal" class="engine">
+          <div class="engine-info">
+            <img class="engine-logo"
+              src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/video-games/unreal-engine-qdh1c46xy8c1nedruo2v5.png/unreal-engine-xwo7bd8vu6fzpnkcifgtu.png?_a=DATAg1AAZAA0"
+              alt="Unreal Engine Logo" />
+
+            <div class="engine-text">
+              <h3>Unreal Engine</h3>
+              <p>
+                I haven't started any projects myself in UE5, but I've seen many videos
+                and it all looks very complex. Unreal is known for <strong>AAA-quality 
+                graphics</strong> and uses <strong>C++</strong> and <strong>Blueprints</strong>.
+              </p>
+            </div>
+          </div>
+
+          <img class="engine-screenshot"
+            src="https://miro.medium.com/v2/resize:fit:1200/1*xIKscGD7B0CqI6gFkNbSEg.jpeg"
+            alt="Unreal Engine Screenshot" />
         </section>
       </article>
     </main>
+
     <footer role="contentinfo">
-      <p>
-        <a href="http://www.csun.edu" title="csun.edu" target="_blank">CSUN</a>
-        18111 Nordhoff St Northridge, CA 91330
-      </p>
+      <p>by Dylan Oseida | <a href="http://www.csun.edu" target="_blank">CSUN</a></p>
     </footer>
   </body>
 </html>
